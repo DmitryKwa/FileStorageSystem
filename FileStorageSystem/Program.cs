@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Установим явный URL чтобы API слушал 5041 (как в методичке)
+builder.WebHost.UseUrls("https://localhost:7287");
+
 // Add services to the container.
 
 builder.Services.AddControllers();
